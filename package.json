@@ -1,0 +1,19 @@
+{
+  "name": "frontend-mentor---profile-card-component-main",
+  "version": "1.0.0",
+  "description": "checkup",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yakeru",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.52.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.10"
+  }
+}

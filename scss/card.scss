@@ -1,0 +1,110 @@
+@use 'variable/color' as clr;
+
+.card {
+    margin: 0;
+    padding: 0;
+
+    background-color: white;
+    box-shadow: 0 10px 30px clr.$box-shadow;
+    border-radius: 15px;
+
+    padding-bottom: 0.35rem;
+
+    width: 352px;
+
+    .card__wrapper-top {
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+
+        .wrapper-top__svg-bg-top {
+            background-image: url(../images/bg-pattern-card.svg);
+            background-position: -3vw, 0;
+            background-repeat: no-repeat;
+            background-size: 410px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+            height: 140px;
+        }
+
+        .wrapper-top__user-avatar {
+            position: absolute;
+            left: 50%;
+            top: 48%;
+        
+            transform: translate(-50%, -50%);
+
+            border-radius: 50%;
+            border: 5px solid white;
+
+            width: 106px;
+        }
+
+        .wrapper-top__text {
+
+            .text__user-name, .text__user-location {
+               margin: 0;
+           }
+
+           .text__user-name {
+               font-size: 1rem;
+               font-weight: 700;
+               color: clr.$dark-desaturated-blue;
+
+               letter-spacing: 0.65px;
+
+               margin-top: 4.5rem;
+
+               .user-name__age {
+                   font-weight: 300;
+
+                   color: clr.$dark-grayish-blue;
+
+                   margin-left: 5px;
+               }
+           }
+
+           .text__user-location {
+               font-size: 0.8rem;
+               font-weight: 300;
+
+               color: clr.$light-gray;
+
+               margin: 0.7rem 0 1.4rem;
+           }
+        }
+    }
+
+    .card__footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+
+        border-top: 1px solid clr.$black-opacity;
+
+        padding-right: 0.75rem;
+
+        .item__number {
+            font-weight: 700;
+            font-size: 1rem;
+            
+            color: clr.$dark-desaturated-blue;
+
+            margin: 1rem 0 0;
+        }
+
+        .item__text-caption {
+            font-weight: 300;
+            font-size: 0.55rem;
+
+            letter-spacing: 1.5px;
+
+            color: clr.$light-gray;
+
+            margin-top: 0;
+        }
+    }
+}
+
